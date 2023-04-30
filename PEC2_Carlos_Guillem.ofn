@@ -117,7 +117,6 @@ DisjointObjectProperties(<http://www.semanticweb.org/carlos/ontologies/2023/3/un
 # Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape>)
 
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> "The property determines if a grape variety is white.")
-SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> owl:topObjectProperty)
 ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
 ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes>)
 
@@ -193,13 +192,13 @@ DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-
 
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> "This property specifies the price of a wine. It has a data type of double")
 DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
-DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> xsd:double)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> xsd:decimal)
 
 # Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating>)
 
 AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> "This property specifies the score given to a wine in a wine tasting. It has a data type of double")
-DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>)
-DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> xsd:double)
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> xsd:decimal)
 
 # Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName>)
 
@@ -387,7 +386,7 @@ ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/unt
 ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon>)
 ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro>)
 DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> "30"^^xsd:decimal)
-DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> ""^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> "66.07"^^xsd:decimal)
 DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> "70"^^xsd:decimal)
 
 # Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico>)
