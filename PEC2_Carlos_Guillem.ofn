@@ -1,0 +1,415 @@
+Prefix(:=<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3>
+Annotation(rdfs:comment "This is an ontology about wines from Spain created by Carlos Federico Bianchi and Guillem")
+
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Collaborator>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Gold_metal>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Local_grapes>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Normal_metal>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Person>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Propietary>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_wine>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Reserve>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Rose_wine>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_location>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>))
+Declaration(Class(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Young_wine>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn>))
+Declaration(ObjectProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#acidityLevel>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#alcoholContent>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#bodyType>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#grapeVarietyName>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#numberReviews>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineName>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName>))
+Declaration(DataProperty(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineryName>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aglianico>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Moscatel>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico>))
+Declaration(NamedIndividual(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Vega_Sicilia>))
+Declaration(AnnotationProperty(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled>))
+Declaration(AnnotationProperty(rdfs:sameAs))
+
+############################
+#   Object Properties
+############################
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic> "This property links a wine to its various characteristics, such as alcohol content, acidity level, and body type. It has a one-to-many relationship, meaning that a wine can have many different characteristics, but each characteristic is associated with only one wine")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasCharacteristic> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> "This property links a wine to its grapes variety, each grape is associated with only one wine")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration> "This property links a wine to its maduration, each maduration is associated with only one wine")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasMaduration> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating> "This property links a wine to its rate score, each rate score is associated with only one wine")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct> "The property determines if a wine is being sold at the same región where it's being produced.")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape> "The property determines if a grape variety is red.")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes>)
+DisjointObjectProperties(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isRedGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> "The property determines if a grape variety is white.")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> "The property determines in which región is a winery located.")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> "This property links a wine to the wine region where it was produced. It has a one-to-many relationship, meaning that a wine region can have many different wines produced in it, but each wine is produced in only one region")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>)
+
+# Object Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> "This property links a wine to the winery that selled it. It has a one-to-many relationship, meaning that a winery can sell many different wines, but each wine is selled by only one winery")
+SubObjectPropertyOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> owl:topObjectProperty)
+ObjectPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+ObjectPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+
+
+############################
+#   Data Properties
+############################
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#acidityLevel> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#acidityLevel>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#acidityLevel> "This property specifies the acidity level of a wine. It has a data type of double")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#acidityLevel> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#acidityLevel> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#alcoholContent> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#alcoholContent>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#alcoholContent> "This property specifies the alcohol content of a wine. It has a data type of double")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#alcoholContent> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#alcoholContent> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#bodyType> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#bodyType>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#bodyType> "This property specifies the body type of a wine. It has a data type of string")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#bodyType> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#bodyType> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#grapeVarietyName> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#grapeVarietyName>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#grapeVarietyName> "This property specifies the name of a grape variety. It has a data type of string")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#grapeVarietyName> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#grapeVarietyName> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#numberReviews> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#numberReviews>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#numberReviews> "This property specifies the number reviews of wine. It has a data type of integer")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#numberReviews> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#numberReviews> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> "This property specifies the maduration of a wine. It has a data type of integer")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> xsd:integer)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineName> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineName>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineName> "This property specifies the name of a wine. It has a data type of string")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineName> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineName> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> "This property specifies the price of a wine. It has a data type of double")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> "This property specifies the score given to a wine in a wine tasting. It has a data type of double")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> xsd:double)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName> "This property specifies the name of a wine region. It has a data type of string")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRegionName> xsd:string)
+
+# Data Property: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineryName> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineryName>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineryName> "This property specifies the name of a winery. It has a data type of string")
+DataPropertyDomain(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineryName> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+DataPropertyRange(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineryName> xsd:string)
+
+
+
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging> "he process of aging wine in barrels or bottles to enhance its flavor and complexity")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Collaborator> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Collaborator>)
+
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Collaborator> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Person>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Gold_metal> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Gold_metal>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Gold_metal> "A gold metal ranking wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Gold_metal> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>)
+DisjointClasses(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Gold_metal> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Normal_metal>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve> "A designation for high-quality wines that have been aged for a longer period of time than other wines from the same producer")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety> "A type of grape used to make wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery> "A winery that sells a large volume of wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+DisjointClasses(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Local_grapes> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Local_grapes>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Local_grapes> "Grape varieties that are native to a particular wine region or country")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Local_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region> "A primary wine-producing region within a country")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>)
+DisjointClasses(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Normal_metal> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Normal_metal>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Normal_metal> "A normal metal ranking wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Normal_metal> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Person> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Person>)
+
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Person> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Propietary> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Propietary>)
+
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Propietary> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Person>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes> "Grape varieties used to produce red wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_wine> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_wine>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_wine> "Wine made from red or black grapes that have been fermented with the grape skins, giving it its characteristic color and tannins")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>)
+
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_location>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Reserve> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Reserve>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Reserve> "A designation for wines that have been aged for a longer period of time than other wines from the same producer, but not as long as Grand Reserve wines")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Reserve> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Rose_wine> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Rose_wine>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Rose_wine> "A type of wine that is pink in color and made from red grapes, but with a shorter period of skin contact than red wine, resulting in a lighter color and lower tannins")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Rose_wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery> "A winery that sells a limited volume of wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region> "A smaller wine-producing region within a larger wine region, with distinct characteristics and regulations")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Region>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine> "A broad categorization of wines based on their color and/or production method")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes> "Grape varieties used to produce white wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grape_Variety>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine> "Wine made from white or green grapes that have been fermented without the grape skins, resulting in a lighter color and lower tannins than red wine")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Type_Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> "A type of alcoholic beverage made from fermented grapes")
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics> "A particular trait or quality of a wine, such as its aroma or body")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Characteristics> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating> "A score or ranking assigned to a wine based on its quality or other characteristics")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_Rating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_location> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_location>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_location> "A geographic area where wine grapes are grown and wine is produced")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine_location> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine>)
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Winery> "A place where wine is selled")
+
+# Class: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Young_wine> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Young_wine>)
+
+AnnotationAssertion(rdfs:comment <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Young_wine> "A wine that has not been aged for an extended period of time and is meant to be consumed soon after bottling")
+SubClassOf(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Young_wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aging>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aglianico> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aglianico>)
+
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aglianico> "https://dbpedia.org/page/Aglianico")
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aglianico>)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro>)
+
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Small_winery> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon>)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon>)
+
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Sub_wine_region> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon>)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Moscatel> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Moscatel>)
+
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Moscatel> "https://dbpedia.org/page/Muscatel")
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Moscatel>)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero>)
+
+AnnotationAssertion(rdfs:sameAs <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero> "https://dbpedia.org/page/Ribera_del_Duero")
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Main_wine_region> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero>)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja>)
+
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Moscatel>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Castilla_y_Leon>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Bodegas_Mauro>)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> "30"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> ""^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Terreus_Paraje_de_Cueva_Baja> "70"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico>)
+
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Aglianico>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Vega_Sicilia>)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> "100"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#winePrice> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> "2087.25"^^xsd:decimal)
+DataPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineRating> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Unico> "4.7"^^xsd:decimal)
+
+# Individual: <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Vega_Sicilia> (<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Vega_Sicilia>)
+
+ClassAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Large_winery> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Vega_Sicilia>)
+ObjectPropertyAssertion(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Vega_Sicilia> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Ribera_del_Duero>)
+
+
+DisjointClasses(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Reserve> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Young_wine>)
+DisjointClasses(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Local_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_grapes> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_grapes>)
+DisjointClasses(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Red_wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Rose_wine> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine>)
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Cheks if wine is a local product") Annotation(rdfs:label "LocalProduct") Body(ClassAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> Variable(:w)) ObjectPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#selledBy> Variable(:w) Variable(:s)) ObjectPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#producedIn> Variable(:w) Variable(:r)) ObjectPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#locatedIn> Variable(:s) Variable(:r)))Head(ObjectPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isLocalProduct> Variable(:w) Variable(:r))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Checks if wine is a grand reserve") Annotation(rdfs:label "WineMaduration") Body(ClassAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> Variable(:w)) DataPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#wineMaduration> Variable(:w) Variable(:period)) BuiltInAtom(<http://www.w3.org/2003/11/swrlb#greaterThan> Variable(:period) "29"^^xsd:integer))Head(ClassAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Grand_reserve> Variable(:w))))
+DLSafeRule(Annotation(<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean) Annotation(rdfs:comment "Check if wine is white") Annotation(rdfs:label "CheckWhiteWine") Body(ClassAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#Wine> Variable(<urn:swrl:var#w>)) ObjectPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#hasGrapeVariety> Variable(<urn:swrl:var#w>) Variable(<urn:swrl:var#gv>)) ObjectPropertyAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#isWhiteGrape> Variable(<urn:swrl:var#w>) Variable(<urn:swrl:var#gv>)))Head(ClassAtom(<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3#White_wine> Variable(<urn:swrl:var#w>))))
+)
