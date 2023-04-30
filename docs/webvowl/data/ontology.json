@@ -1,0 +1,1247 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "http://www.semanticweb.org/carlos/ontologies/2023/3/wines", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "comments" : {
+      "undefined" : "This is an ontology about wines from Spain created by Carlos and Guillem"
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Winery"
+    },
+    "subClasses" : [ "1", "2", "3" ],
+    "comment" : {
+      "undefined" : "A place where wine is selled"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Large_winery"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "labels" : {
+        "IRI-based" : "Vega_Sicilia"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A winery that sells a large volume of wine"
+    },
+    "id" : "2",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "21",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wine_location"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "undefined" : "A geographic area where wine grapes are grown and wine is produced"
+    },
+    "id" : "19",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "35",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wine_Characteristics"
+    },
+    "comment" : {
+      "undefined" : "A particular trait or quality of a wine, such as its aroma or body"
+    },
+    "id" : "37",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Type_Wine"
+    },
+    "subClasses" : [ "16", "5", "38" ],
+    "comment" : {
+      "undefined" : "A broad categorization of wines based on their color and/or production method"
+    },
+    "id" : "6",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Young_wine"
+    },
+    "comment" : {
+      "undefined" : "A wine that has not been aged for an extended period of time and is meant to be consumed soon after bottling"
+    },
+    "id" : "39",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Grape_Variety"
+    },
+    "subClasses" : [ "44", "45", "46" ],
+    "comment" : {
+      "undefined" : "A type of grape used to make wine"
+    },
+    "id" : "8",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#decimal",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "decimal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Red_grapes"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Aglianico",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Aglianico"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Grape varieties used to produce red wine"
+    },
+    "id" : "45",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "51",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wine"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "labels" : {
+        "IRI-based" : "Terreus_Paraje_de_Cueva_Baja"
+      }
+    }, {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "labels" : {
+        "IRI-based" : "Unico"
+      }
+    } ],
+    "subClasses" : [ "33", "8", "37", "6", "19", "40" ],
+    "comment" : {
+      "undefined" : "A type of alcoholic beverage made from fermented grapes"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Normal_metal"
+    },
+    "comment" : {
+      "undefined" : "A normal metal ranking wine"
+    },
+    "id" : "54",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Wine_Rating"
+    },
+    "subClasses" : [ "55", "54" ],
+    "comment" : {
+      "undefined" : "A score or ranking assigned to a wine based on its quality or other characteristics"
+    },
+    "id" : "33",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Aging"
+    },
+    "subClasses" : [ "58", "39", "61" ],
+    "comment" : {
+      "undefined" : "he process of aging wine in barrels or bottles to enhance its flavor and complexity"
+    },
+    "id" : "40",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Rose_wine"
+    },
+    "comment" : {
+      "undefined" : "A type of wine that is pink in color and made from red grapes, but with a shorter period of skin contact than red wine, resulting in a lighter color and lower tannins"
+    },
+    "id" : "38",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "White_grapes"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Muscatel",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Moscatel"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Grape varieties used to produce white wine"
+    },
+    "id" : "44",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Propietary",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Propietary"
+    },
+    "id" : "70",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Gold_metal"
+    },
+    "comment" : {
+      "undefined" : "A gold metal ranking wine"
+    },
+    "id" : "55",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Small_winery"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Bodegas_Mauro",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "labels" : {
+        "IRI-based" : "Bodegas_Mauro"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A winery that sells a limited volume of wine"
+    },
+    "id" : "3",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Person"
+    },
+    "subClasses" : [ "79", "70" ],
+    "id" : "1",
+    "superClasses" : [ "0" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Sub_wine_region"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "labels" : {
+        "IRI-based" : "Castilla_y_Leon"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A smaller wine-producing region within a larger wine region, with distinct characteristics and regulations"
+    },
+    "id" : "77",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "subClasses" : [ "77", "75" ],
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Grand_reserve"
+    },
+    "comment" : {
+      "undefined" : "A designation for high-quality wines that have been aged for a longer period of time than other wines from the same producer"
+    },
+    "id" : "61",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "White_wine"
+    },
+    "comment" : {
+      "undefined" : "Wine made from white or green grapes that have been fermented without the grape skins, resulting in a lighter color and lower tannins than red wine"
+    },
+    "id" : "5",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reserve"
+    },
+    "comment" : {
+      "undefined" : "A designation for wines that have been aged for a longer period of time than other wines from the same producer, but not as long as Grand Reserve wines"
+    },
+    "id" : "58",
+    "superClasses" : [ "40" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Red_wine"
+    },
+    "comment" : {
+      "undefined" : "Wine made from red or black grapes that have been fermented with the grape skins, giving it its characteristic color and tannins"
+    },
+    "id" : "16",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Main_wine_region"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero",
+      "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+      "annotations" : {
+        "sameAs" : [ {
+          "identifier" : "sameAs",
+          "language" : "undefined",
+          "value" : "https://dbpedia.org/page/Ribera_del_Duero",
+          "type" : "label"
+        } ]
+      },
+      "labels" : {
+        "IRI-based" : "Ribera_del_Duero"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A primary wine-producing region within a country"
+    },
+    "id" : "75",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Local_grapes"
+    },
+    "comment" : {
+      "undefined" : "Grape varieties that are native to a particular wine region or country"
+    },
+    "id" : "46",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Collaborator",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Collaborator"
+    },
+    "id" : "79",
+    "superClasses" : [ "1" ]
+  } ],
+  "property" : [ {
+    "id" : "4",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "52",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "56",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "63",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "86",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "87",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "88",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "89",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "90",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "91",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "92",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "95",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "26",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "grapeVarietyName"
+    },
+    "domain" : "8",
+    "comment" : {
+      "undefined" : "This property specifies the name of a grape variety. It has a data type of string"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "winePrice"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property specifies the price of a wine. It has a data type of double"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "wineRating"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property specifies the score given to a wine in a wine tasting. It has a data type of double"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "range" : "6",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "21",
+    "subproperty" : [ "22", "23", "24", "25", "26", "27", "28", "29" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
+  }, {
+    "range" : "0",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "0",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "range" : "0",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "hasRating"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property links a wine to its rate score, each rate score is associated with only one wine"
+    },
+    "attributes" : [ "object" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasCharacteristic"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property links a wine to its various characteristics, such as alcohol content, acidity level, and body type. It has a one-to-many relationship, meaning that a wine can have many different characteristics, but each characteristic is associated with only one wine"
+    },
+    "attributes" : [ "object" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "wineName"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property specifies the name of a wine. It has a data type of string"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "41"
+  }, {
+    "range" : "5",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "5",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "bodyType"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "This property specifies the body type of a wine. It has a data type of string"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "acidityLevel"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "This property specifies the acidity level of a wine. It has a data type of double"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "56"
+  }, {
+    "range" : "40",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "range" : "33",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "59"
+  }, {
+    "range" : "40",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "60"
+  }, {
+    "range" : "40",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "numberReviews"
+    },
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property specifies the number reviews of wine. It has a data type of integer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "63"
+  }, {
+    "range" : "11",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
+  }, {
+    "range" : "11",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "range" : "33",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
+  }, {
+    "range" : "11",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
+  }, {
+    "range" : "11",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "68"
+  }, {
+    "range" : "11",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
+  }, {
+    "range" : "11",
+    "domain" : "33",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
+  }, {
+    "range" : "8",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "range" : "8",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "73"
+  }, {
+    "range" : "18",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
+  }, {
+    "range" : "18",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "range" : "1",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "78"
+  }, {
+    "range" : "6",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "8",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "81"
+  }, {
+    "range" : "1",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "selledBy"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property links a wine to the winery that selled it. It has a one-to-many relationship, meaning that a winery can sell many different wines, but each wine is selled by only one winery"
+    },
+    "attributes" : [ "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasGrapeVariety"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property links a wine to its grapes variety, each grape is associated with only one wine"
+    },
+    "attributes" : [ "object" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "The property determines in which región is a winery located."
+    },
+    "attributes" : [ "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "wineMaduration"
+    },
+    "domain" : "40",
+    "comment" : {
+      "undefined" : "This property specifies the maduration of a wine. It has a data type of integer"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "producedIn"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property links a wine to the wine region where it was produced. It has a one-to-many relationship, meaning that a wine region can have many different wines produced in it, but each wine is produced in only one region"
+    },
+    "attributes" : [ "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "35",
+    "label" : {
+      "IRI-based" : "isLocalProduct"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "The property determines if a wine is being sold at the same región where it's being produced."
+    },
+    "attributes" : [ "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "wineRegionName"
+    },
+    "domain" : "18",
+    "comment" : {
+      "undefined" : "This property specifies the name of a wine region. It has a data type of string"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "range" : "39",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "85"
+  }, {
+    "range" : "39",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "86"
+  }, {
+    "range" : "3",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "87"
+  }, {
+    "range" : "45",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "88"
+  }, {
+    "range" : "44",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "44",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "90"
+  }, {
+    "range" : "77",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "range" : "38",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "alcoholContent"
+    },
+    "domain" : "37",
+    "comment" : {
+      "undefined" : "This property specifies the alcohol content of a wine. It has a data type of double"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "93"
+  }, {
+    "range" : "54",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "58",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "wineryName"
+    },
+    "domain" : "0",
+    "comment" : {
+      "undefined" : "This property specifies the name of a winery. It has a data type of string"
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "96"
+  }, {
+    "iri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration",
+    "baseIri" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "hasMaduration"
+    },
+    "superproperty" : [ "20" ],
+    "domain" : "11",
+    "comment" : {
+      "undefined" : "This property links a wine to its maduration, each maduration is associated with only one wine"
+    },
+    "attributes" : [ "object" ],
+    "id" : "26"
+  } ]
+}
