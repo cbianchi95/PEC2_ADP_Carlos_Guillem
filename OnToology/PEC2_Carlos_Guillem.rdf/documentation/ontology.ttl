@@ -1,0 +1,584 @@
+@prefix : <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#> .
+
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines> rdf:type owl:Ontology ;
+                                                             rdfs:comment "This is an ontology about wines from Spain created by Carlos and Guillem" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic
+:hasCharacteristic rdf:type owl:ObjectProperty ;
+                   rdfs:subPropertyOf owl:topObjectProperty ;
+                   rdfs:domain :Wine ;
+                   rdfs:range :Wine_Characteristics ;
+                   rdfs:comment "This property links a wine to its various characteristics, such as alcohol content, acidity level, and body type. It has a one-to-many relationship, meaning that a wine can have many different characteristics, but each characteristic is associated with only one wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety
+:hasGrapeVariety rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty ;
+                 rdfs:domain :Wine ;
+                 rdfs:range :Grape_Variety ;
+                 rdfs:comment "This property links a wine to its grapes variety, each grape is associated with only one wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration
+:hasMaduration rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdfs:domain :Wine ;
+               rdfs:range :Aging ;
+               rdfs:comment "This property links a wine to its maduration, each maduration is associated with only one wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range :Wine_Rating ;
+           rdfs:comment "This property links a wine to its rate score, each rate score is associated with only one wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct
+:isLocalProduct rdf:type owl:ObjectProperty ;
+                rdfs:subPropertyOf owl:topObjectProperty ;
+                rdfs:domain :Wine ;
+                rdfs:comment "The property determines if a wine is being sold at the same región where it's being produced." .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn
+:locatedIn rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty ;
+           rdfs:domain :Winery ;
+           rdfs:range :Region ;
+           rdfs:comment "The property determines in which región is a winery located." .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn
+:producedIn rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty ;
+            rdfs:domain :Wine ;
+            rdfs:range :Region ;
+            rdfs:comment "This property links a wine to the wine region where it was produced. It has a one-to-many relationship, meaning that a wine region can have many different wines produced in it, but each wine is produced in only one region" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy
+:selledBy rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty ;
+          rdfs:domain :Wine ;
+          rdfs:range :Winery ;
+          rdfs:comment "This property links a wine to the winery that selled it. It has a one-to-many relationship, meaning that a winery can sell many different wines, but each wine is selled by only one winery" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel
+:acidityLevel rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Wine_Characteristics ;
+              rdfs:range xsd:double ;
+              rdfs:comment "This property specifies the acidity level of a wine. It has a data type of double" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent
+:alcoholContent rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Wine_Characteristics ;
+                rdfs:range xsd:double ;
+                rdfs:comment "This property specifies the alcohol content of a wine. It has a data type of double" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType
+:bodyType rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Wine_Characteristics ;
+          rdfs:range xsd:string ;
+          rdfs:comment "This property specifies the body type of a wine. It has a data type of string" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName
+:grapeVarietyName rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Grape_Variety ;
+                  rdfs:range xsd:string ;
+                  rdfs:comment "This property specifies the name of a grape variety. It has a data type of string" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews
+:numberReviews rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Wine ;
+               rdfs:range xsd:integer ;
+               rdfs:comment "This property specifies the number reviews of wine. It has a data type of integer" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration
+:wineMaduration rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Aging ;
+                rdfs:range xsd:integer ;
+                rdfs:comment "This property specifies the maduration of a wine. It has a data type of integer" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName
+:wineName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Wine ;
+          rdfs:range xsd:string ;
+          rdfs:comment "This property specifies the name of a wine. It has a data type of string" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice
+:winePrice rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Wine ;
+           rdfs:range xsd:decimal ;
+           rdfs:comment "This property specifies the price of a wine. It has a data type of double" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating
+:wineRating rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Wine ;
+            rdfs:range xsd:decimal ;
+            rdfs:comment "This property specifies the score given to a wine in a wine tasting. It has a data type of double" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName
+:wineRegionName rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Region ;
+                rdfs:range xsd:string ;
+                rdfs:comment "This property specifies the name of a wine region. It has a data type of string" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName
+:wineryName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Winery ;
+            rdfs:range xsd:string ;
+            rdfs:comment "This property specifies the name of a winery. It has a data type of string" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging
+:Aging rdf:type owl:Class ;
+       rdfs:subClassOf :Wine ;
+       rdfs:comment "he process of aging wine in barrels or bottles to enhance its flavor and complexity" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Collaborator
+:Collaborator rdf:type owl:Class ;
+              rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal
+:Gold_metal rdf:type owl:Class ;
+            rdfs:subClassOf :Wine_Rating ;
+            owl:disjointWith :Normal_metal ;
+            rdfs:comment "A gold metal ranking wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve
+:Grand_reserve rdf:type owl:Class ;
+               rdfs:subClassOf :Aging ;
+               rdfs:comment "A designation for high-quality wines that have been aged for a longer period of time than other wines from the same producer" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety
+:Grape_Variety rdf:type owl:Class ;
+               rdfs:subClassOf :Wine ;
+               rdfs:comment "A type of grape used to make wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery
+:Large_winery rdf:type owl:Class ;
+              rdfs:subClassOf :Winery ;
+              owl:disjointWith :Small_winery ;
+              rdfs:comment "A winery that sells a large volume of wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes
+:Local_grapes rdf:type owl:Class ;
+              rdfs:subClassOf :Grape_Variety ;
+              rdfs:comment "Grape varieties that are native to a particular wine region or country" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region
+:Main_wine_region rdf:type owl:Class ;
+                  rdfs:subClassOf :Region ;
+                  owl:disjointWith :Sub_wine_region ;
+                  rdfs:comment "A primary wine-producing region within a country" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal
+:Normal_metal rdf:type owl:Class ;
+              rdfs:subClassOf :Wine_Rating ;
+              rdfs:comment "A normal metal ranking wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person
+:Person rdf:type owl:Class ;
+        rdfs:subClassOf :Winery .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Propietary
+:Propietary rdf:type owl:Class ;
+            rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes
+:Red_grapes rdf:type owl:Class ;
+            rdfs:subClassOf :Grape_Variety ;
+            rdfs:comment "Grape varieties used to produce red wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine
+:Red_wine rdf:type owl:Class ;
+          rdfs:subClassOf :Type_Wine ;
+          rdfs:comment "Wine made from red or black grapes that have been fermented with the grape skins, giving it its characteristic color and tannins" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region
+:Region rdf:type owl:Class ;
+        rdfs:subClassOf :Wine_location .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve
+:Reserve rdf:type owl:Class ;
+         rdfs:subClassOf :Aging ;
+         rdfs:comment "A designation for wines that have been aged for a longer period of time than other wines from the same producer, but not as long as Grand Reserve wines" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine
+:Rose_wine rdf:type owl:Class ;
+           rdfs:subClassOf :Type_Wine ;
+           rdfs:comment "A type of wine that is pink in color and made from red grapes, but with a shorter period of skin contact than red wine, resulting in a lighter color and lower tannins" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery
+:Small_winery rdf:type owl:Class ;
+              rdfs:subClassOf :Winery ;
+              rdfs:comment "A winery that sells a limited volume of wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region
+:Sub_wine_region rdf:type owl:Class ;
+                 rdfs:subClassOf :Region ;
+                 rdfs:comment "A smaller wine-producing region within a larger wine region, with distinct characteristics and regulations" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine
+:Type_Wine rdf:type owl:Class ;
+           rdfs:subClassOf :Wine ;
+           rdfs:comment "A broad categorization of wines based on their color and/or production method" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes
+:White_grapes rdf:type owl:Class ;
+              rdfs:subClassOf :Grape_Variety ;
+              rdfs:comment "Grape varieties used to produce white wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine
+:White_wine rdf:type owl:Class ;
+            rdfs:subClassOf :Type_Wine ;
+            rdfs:comment "Wine made from white or green grapes that have been fermented without the grape skins, resulting in a lighter color and lower tannins than red wine" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine
+:Wine rdf:type owl:Class ;
+      rdfs:comment "A type of alcoholic beverage made from fermented grapes" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics
+:Wine_Characteristics rdf:type owl:Class ;
+                      rdfs:subClassOf :Wine ;
+                      rdfs:comment "A particular trait or quality of a wine, such as its aroma or body" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating
+:Wine_Rating rdf:type owl:Class ;
+             rdfs:subClassOf :Wine ;
+             rdfs:comment "A score or ranking assigned to a wine based on its quality or other characteristics" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location
+:Wine_location rdf:type owl:Class ;
+               rdfs:subClassOf :Wine ;
+               rdfs:comment "A geographic area where wine grapes are grown and wine is produced" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery
+:Winery rdf:type owl:Class ;
+        rdfs:comment "A place where wine is selled" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine
+:Young_wine rdf:type owl:Class ;
+            rdfs:subClassOf :Aging ;
+            rdfs:comment "A wine that has not been aged for an extended period of time and is meant to be consumed soon after bottling" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico
+:Aglianico rdf:type owl:NamedIndividual ,
+                    :Red_grapes ;
+           rdfs:sameAs "https://dbpedia.org/page/Aglianico" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Bodegas_Mauro
+:Bodegas_Mauro rdf:type owl:NamedIndividual ,
+                        :Small_winery ;
+               :locatedIn :Castilla_y_Leon .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon
+:Castilla_y_Leon rdf:type owl:NamedIndividual ,
+                          :Sub_wine_region .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel
+:Moscatel rdf:type owl:NamedIndividual ,
+                   :White_grapes ;
+          rdfs:sameAs "https://dbpedia.org/page/Muscatel" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero
+:Ribera_del_Duero rdf:type owl:NamedIndividual ,
+                           :Main_wine_region ;
+                  rdfs:sameAs "https://dbpedia.org/page/Ribera_del_Duero" .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja
+:Terreus_Paraje_de_Cueva_Baja rdf:type owl:NamedIndividual ,
+                                       :Wine ;
+                              :hasGrapeVariety :Moscatel ;
+                              :producedIn :Castilla_y_Leon ;
+                              :selledBy :Vega_Sicilia ;
+                              :wineMaduration 30 ;
+                              :winePrice 66.07 ;
+                              :wineRating 70 .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico
+:Unico rdf:type owl:NamedIndividual ,
+                :Wine ;
+       :hasGrapeVariety :Aglianico ;
+       :producedIn :Ribera_del_Duero ;
+       :selledBy :Vega_Sicilia ;
+       :wineMaduration 100 ;
+       :winePrice 2087.25 ;
+       :wineRating 4.7 .
+
+
+###  http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia
+:Vega_Sicilia rdf:type owl:NamedIndividual ,
+                       :Large_winery ;
+              :locatedIn :Ribera_del_Duero .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Grand_reserve
+                :Reserve
+                :Young_wine
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Local_grapes
+                :Red_grapes
+                :White_grapes
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Red_wine
+                :Rose_wine
+                :White_wine
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/s> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#w> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#gv> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/period> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Cheks if wine is a local product" ;
+   rdfs:label "LocalProduct" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :selledBy ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/s>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :locatedIn ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/s> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :producedIn ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r>
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isLocalProduct ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Check if wine is white" ;
+   rdfs:label "CheckWhiteWine" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGrapeVariety ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#gv>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :White_grapes ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gv>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :White_wine ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasGrapeVariety ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#gv>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Red_grapes ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gv>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Red_wine ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Checks if wine is a grand reserve" ;
+   rdfs:label "WineMaduration" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                       <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                    rdf:first <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/period> ;
+                                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                                               rdf:first 29 ;
+                                                                                                               rdf:rest rdf:nil
+                                                                                                             ]
+                                                                                                  ]
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Wine ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :wineMaduration ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/period>
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Grand_reserve ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

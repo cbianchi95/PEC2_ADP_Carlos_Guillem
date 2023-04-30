@@ -1,0 +1,31 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Person" "base:Winery" "base:Collaborator" "base:Wine_Characteristics" "base:Region" "base:Young_wine" "base:Rose_wine" "base:Wine_location" "base:Reserve" "base:Wine" "base:Type_Wine" "base:Grape_Variety" "base:Red_wine" "base:Red_grapes" "base:Propietary" "base:Small_winery" "base:Aging" "base:Gold_metal" "base:Local_grapes" "base:White_grapes" "base:Main_wine_region" "base:Normal_metal" "base:White_wine" "base:Large_winery" "base:Grand_reserve" "base:Wine_Rating" "base:Sub_wine_region" ; /*classes style*/
+	"base:Grand_reserve" -> "base:Aging" [ label = "rdfs:subClassOf" ];
+	"base:Region" -> "base:Wine_location" [ label = "rdfs:subClassOf" ];
+	"base:Collaborator" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Type_Wine" -> "base:Wine" [ label = "rdfs:subClassOf" ];
+	"base:Gold_metal" -> "base:Wine_Rating" [ label = "rdfs:subClassOf" ];
+	"base:Sub_wine_region" -> "base:Region" [ label = "rdfs:subClassOf" ];
+	"base:Aging" -> "base:Wine" [ label = "rdfs:subClassOf" ];
+	"base:Grape_Variety" -> "base:Wine" [ label = "rdfs:subClassOf" ];
+	"base:Small_winery" -> "base:Winery" [ label = "rdfs:subClassOf" ];
+	"base:Rose_wine" -> "base:Type_Wine" [ label = "rdfs:subClassOf" ];
+	"base:Young_wine" -> "base:Aging" [ label = "rdfs:subClassOf" ];
+	"base:Person" -> "base:Winery" [ label = "rdfs:subClassOf" ];
+	"base:Propietary" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Local_grapes" -> "base:Grape_Variety" [ label = "rdfs:subClassOf" ];
+	"base:Wine_location" -> "base:Wine" [ label = "rdfs:subClassOf" ];
+	"base:Red_wine" -> "base:Type_Wine" [ label = "rdfs:subClassOf" ];
+	"base:Wine_Characteristics" -> "base:Wine" [ label = "rdfs:subClassOf" ];
+	"base:Large_winery" -> "base:Winery" [ label = "rdfs:subClassOf" ];
+	"base:Main_wine_region" -> "base:Region" [ label = "rdfs:subClassOf" ];
+	"base:Normal_metal" -> "base:Wine_Rating" [ label = "rdfs:subClassOf" ];
+	"base:Reserve" -> "base:Aging" [ label = "rdfs:subClassOf" ];
+	"base:White_grapes" -> "base:Grape_Variety" [ label = "rdfs:subClassOf" ];
+	"base:Wine_Rating" -> "base:Wine" [ label = "rdfs:subClassOf" ];
+	"base:White_wine" -> "base:Type_Wine" [ label = "rdfs:subClassOf" ];
+	"base:Red_grapes" -> "base:Grape_Variety" [ label = "rdfs:subClassOf" ];
+
+}
