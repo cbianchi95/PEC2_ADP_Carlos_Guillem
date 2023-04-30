@@ -1,0 +1,177 @@
+{
+  "@context" : {
+    "hasMaduration" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration",
+      "@type" : "@id"
+    },
+    "Gold_metal" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal"
+    },
+    "Young_wine" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine"
+    },
+    "winePrice" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Red_grapes" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes"
+    },
+    "Grape_Variety" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety"
+    },
+    "wineRegionName" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasRating" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating",
+      "@type" : "@id"
+    },
+    "Winery" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery"
+    },
+    "Wine_location" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location"
+    },
+    "Reserve" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve"
+    },
+    "Aging" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "Type_Wine" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine"
+    },
+    "White_wine" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine"
+    },
+    "wineMaduration" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Main_wine_region" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region"
+    },
+    "numberReviews" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "Local_grapes" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes"
+    },
+    "Wine_Rating" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating"
+    },
+    "Red_wine" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine"
+    },
+    "selledBy" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person"
+    },
+    "grapeVarietyName" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "producedIn" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn",
+      "@type" : "@id"
+    },
+    "White_grapes" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes"
+    },
+    "wineryName" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Rose_wine" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "Large_winery" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery"
+    },
+    "bodyType" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "wineRating" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Normal_metal" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal"
+    },
+    "hasGrapeVariety" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety",
+      "@type" : "@id"
+    },
+    "hasCharacteristic" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic",
+      "@type" : "@id"
+    },
+    "isLocalProduct" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct",
+      "@type" : "@id"
+    },
+    "alcoholContent" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "locatedIn" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn",
+      "@type" : "@id"
+    },
+    "wineName" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Wine_Characteristics" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "acidityLevel" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "Grand_reserve" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve"
+    },
+    "Propietary" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Propietary"
+    },
+    "Collaborator" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Collaborator"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region"
+    },
+    "Small_winery" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery"
+    },
+    "Sub_wine_region" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region"
+    },
+    "Wine" : {
+      "@id" : "http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine"
+    }
+  }
+}

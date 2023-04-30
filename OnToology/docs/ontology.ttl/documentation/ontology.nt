@@ -1,0 +1,553 @@
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines> <http://www.w3.org/2000/01/rdf-schema#comment> "This is an ontology about wines from Spain created by Carlos and Guillem" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasCharacteristic> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a wine to its various characteristics, such as alcohol content, acidity level, and body type. It has a one-to-many relationship, meaning that a wine can have many different characteristics, but each characteristic is associated with only one wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a wine to its grapes variety, each grape is associated with only one wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasMaduration> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a wine to its maduration, each maduration is associated with only one wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasRating> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a wine to its rate score, each rate score is associated with only one wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct> <http://www.w3.org/2000/01/rdf-schema#comment> "The property determines if a wine is being sold at the same región where it's being produced." .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "The property determines in which región is a winery located." .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a wine to the wine region where it was produced. It has a one-to-many relationship, meaning that a wine region can have many different wines produced in it, but each wine is produced in only one region" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a wine to the winery that selled it. It has a one-to-many relationship, meaning that a winery can sell many different wines, but each wine is selled by only one winery" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#acidityLevel> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the acidity level of a wine. It has a data type of double" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#alcoholContent> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the alcohol content of a wine. It has a data type of double" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#bodyType> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the body type of a wine. It has a data type of string" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#grapeVarietyName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the name of a grape variety. It has a data type of string" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#numberReviews> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the number reviews of wine. It has a data type of integer" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the maduration of a wine. It has a data type of integer" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the name of a wine. It has a data type of string" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the price of a wine. It has a data type of double" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the score given to a wine in a wine tasting. It has a data type of double" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRegionName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the name of a wine region. It has a data type of string" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineryName> <http://www.w3.org/2000/01/rdf-schema#comment> "This property specifies the name of a winery. It has a data type of string" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> <http://www.w3.org/2000/01/rdf-schema#comment> "he process of aging wine in barrels or bottles to enhance its flavor and complexity" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Collaborator
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Collaborator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Collaborator> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Gold_metal> <http://www.w3.org/2000/01/rdf-schema#comment> "A gold metal ranking wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve> <http://www.w3.org/2000/01/rdf-schema#comment> "A designation for high-quality wines that have been aged for a longer period of time than other wines from the same producer" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of grape used to make wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery> <http://www.w3.org/2000/01/rdf-schema#comment> "A winery that sells a large volume of wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes> <http://www.w3.org/2000/01/rdf-schema#comment> "Grape varieties that are native to a particular wine region or country" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region> <http://www.w3.org/2000/01/rdf-schema#comment> "A primary wine-producing region within a country" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Normal_metal> <http://www.w3.org/2000/01/rdf-schema#comment> "A normal metal ranking wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Propietary
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Propietary> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Propietary> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Person> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes> <http://www.w3.org/2000/01/rdf-schema#comment> "Grape varieties used to produce red wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine made from red or black grapes that have been fermented with the grape skins, giving it its characteristic color and tannins" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve> <http://www.w3.org/2000/01/rdf-schema#comment> "A designation for wines that have been aged for a longer period of time than other wines from the same producer, but not as long as Grand Reserve wines" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of wine that is pink in color and made from red grapes, but with a shorter period of skin contact than red wine, resulting in a lighter color and lower tannins" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery> <http://www.w3.org/2000/01/rdf-schema#comment> "A winery that sells a limited volume of wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region> <http://www.w3.org/2000/01/rdf-schema#comment> "A smaller wine-producing region within a larger wine region, with distinct characteristics and regulations" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "A broad categorization of wines based on their color and/or production method" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grape_Variety> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes> <http://www.w3.org/2000/01/rdf-schema#comment> "Grape varieties used to produce white wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Type_Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine> <http://www.w3.org/2000/01/rdf-schema#comment> "Wine made from white or green grapes that have been fermented without the grape skins, resulting in a lighter color and lower tannins than red wine" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> <http://www.w3.org/2000/01/rdf-schema#comment> "A type of alcoholic beverage made from fermented grapes" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Characteristics> <http://www.w3.org/2000/01/rdf-schema#comment> "A particular trait or quality of a wine, such as its aroma or body" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_Rating> <http://www.w3.org/2000/01/rdf-schema#comment> "A score or ranking assigned to a wine based on its quality or other characteristics" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine_location> <http://www.w3.org/2000/01/rdf-schema#comment> "A geographic area where wine grapes are grown and wine is produced" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Winery> <http://www.w3.org/2000/01/rdf-schema#comment> "A place where wine is selled" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aging> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine> <http://www.w3.org/2000/01/rdf-schema#comment> "A wine that has not been aged for an extended period of time and is meant to be consumed soon after bottling" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Aglianico" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Bodegas_Mauro
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Bodegas_Mauro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Bodegas_Mauro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Small_winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Bodegas_Mauro> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Sub_wine_region> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Muscatel" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Main_wine_region> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Ribera_del_Duero" .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Moscatel> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Castilla_y_Leon> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice> "66.07"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Terreus_Paraje_de_Cueva_Baja> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Aglianico> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> "100"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#winePrice> "2087.25"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Unico> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineRating> "4.7"^^<http://www.w3.org/2001/XMLSchema#decimal> .
+# 
+# http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Large_winery> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Vega_Sicilia> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Ribera_del_Duero> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Young_wine> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Reserve> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid5 <http://www.w3.org/2002/07/owl#members> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Local_grapes> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid9 <http://www.w3.org/2002/07/owl#members> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Rose_wine> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/s> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#w> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<urn:swrl:var#gv> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/period> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid13 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#comment> "Cheks if wine is a local product" .
+_:genid13 <http://www.w3.org/2000/01/rdf-schema#label> "LocalProduct" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid13 <http://www.w3.org/2003/11/swrl#body> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid15 .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r> .
+_:genid15 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid15 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#producedIn> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid17 .
+_:genid17 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid17 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid19 .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r> .
+_:genid19 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/s> .
+_:genid19 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#locatedIn> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/s> .
+_:genid21 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid21 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#selledBy> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/2003/11/swrl#head> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid23 .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/r> .
+_:genid23 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid23 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#isLocalProduct> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#comment> "Check if wine is white" .
+_:genid24 <http://www.w3.org/2000/01/rdf-schema#label> "CheckWhiteWine" .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid24 <http://www.w3.org/2003/11/swrl#body> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid26 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gv> .
+_:genid28 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_grapes> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#gv> .
+_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid24 <http://www.w3.org/2003/11/swrl#head> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid32 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#White_wine> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid33 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#gv> .
+_:genid35 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_grapes> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#gv> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#hasGrapeVariety> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid33 <http://www.w3.org/2003/11/swrl#head> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#w> .
+_:genid41 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Red_wine> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#comment> "Checks if wine is a grand reserve" .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#label> "WineMaduration" .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid42 <http://www.w3.org/2003/11/swrl#body> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/period> .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid44 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#wineMaduration> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid46 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Wine> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#arguments> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "29"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/period> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/2003/11/swrl#head> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/carlos/ontologies/2023/3/untitled-ontology-3/w> .
+_:genid52 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/carlos/ontologies/2023/3/wines#Grand_reserve> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
